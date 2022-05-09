@@ -1,0 +1,18 @@
+video.mp4
+
+# OS/Editor files
+.DS_Store
+.vscode/
+
+# Static CSS
+/static
+
+# Node modules
+node_modules
+
+# Dist
+dist
+
+gulp.cmd
+
+/.idea/
