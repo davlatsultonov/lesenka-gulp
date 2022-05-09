@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="ru">
+@@include('./templates/head.html')
+<body>
+<div class="wrapper">
+  <div class="main">
+    @@include('./templates/header.html')
+  </div>
+  @@include('./templates/footer.html')
+</div>
+
+@@include('./templates/scriptTag.html')
+</body>
 </html>
