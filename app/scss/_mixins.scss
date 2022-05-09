@@ -1,0 +1,20 @@
+@mixin background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin ellipsis($number) {
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $number;
+  overflow: hidden;
+}
+
+@mixin positionExtend() {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

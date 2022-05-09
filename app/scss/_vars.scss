@@ -1,0 +1,22 @@
+$lg: (max-width: 1200px);
+$md: (max-width: 1024px);
+$sm: (max-width: 768px);
+$xs-l: (max-width: 640px);
+$xs: (max-width: 480px);
+$xxs: (max-width: 375px);
+
+// z-indexes
+$layer-1: 500;
+$layer-2: 502;
+$layer-3: 503;
+
+// border radius
+$base-border-radius: 8px;
+
+// base colors
+$base-red: #b02c44;
+$base-yellow: #eda22d;
+
+// shadow
+$base-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+$base-shadow-hover: 0 5px 7px rgba(0, 0, 0, 0.1);

@@ -1,0 +1,160 @@
+.hidden-lg {
+  display: none !important;
+}
+
+.hidden-md {
+  display: block;
+
+  &--flex {
+    display: flex;
+  }
+
+  @media #{$md} {
+    display: none !important;
+  }
+}
+
+.hidden-sm {
+  display: block;
+
+  &--flex {
+    display: flex;
+  }
+
+  @media #{$sm} {
+    display: none !important;
+  }
+}
+
+.hidden-xs-l {
+  display: block;
+
+  &--flex {
+    display: flex;
+  }
+
+  @media #{$xs-l} {
+    display: none !important;
+  }
+}
+
+.hidden-xs {
+  display: block;
+
+  &--flex {
+    display: flex;
+  }
+
+  @media #{$xs} {
+    display: none !important;
+  }
+}
+
+.visible-md {
+  display: none;
+
+
+  @media #{$md} {
+    display: block !important;
+  }
+
+  &--flex {
+
+    @media #{$md} {
+      display: flex !important;
+    }
+  }
+
+  &--inline-flex {
+    @media #{$md} {
+      display: inline-flex !important;
+    }
+  }
+
+  &--inline-block {
+    @media #{$md} {
+      display: inline-block !important;
+    }
+  }
+}
+
+.visible-sm {
+  display: none;
+
+  @media #{$sm} {
+    display: block !important;
+  }
+
+  &--flex {
+
+    @media #{$sm} {
+      display: flex !important;
+    }
+  }
+
+  &--inline-flex {
+    @media #{$sm} {
+      display: inline-flex !important;
+    }
+  }
+
+  &--inline-block {
+    @media #{$sm} {
+      display: inline-block !important;
+    }
+  }
+}
+
+.visible-xs-l {
+  display: none;
+
+  @media #{$xs-l} {
+    display: block !important;
+  }
+
+  &--flex {
+
+    @media #{$xs-l} {
+      display: flex !important;
+    }
+  }
+
+  &--inline-flex {
+    @media #{$xs-l} {
+      display: inline-flex !important;
+    }
+  }
+
+  &--inline-block {
+    @media #{$xs-l} {
+      display: inline-block !important;
+    }
+  }
+}
+
+.visible-xs {
+  display: none;
+
+  @media #{$xs} {
+    display: block !important;
+  }
+
+  &--flex {
+
+    @media #{$xs} {
+      display: flex !important;
+    }
+  }
+
+  &--inline-flex {
+    @media #{$xs} {
+      display: inline-flex !important;
+    }
+  }
+
+  &--inline-block {
+    @media #{$xs} {
+      display: inline-block !important;
+    }
+  }
+}

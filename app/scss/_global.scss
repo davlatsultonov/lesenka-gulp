@@ -1,0 +1,41 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	word-break: break-word;
+	color: #3e3e3e;
+}
+
+input {
+	outline: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.container{
+	max-width: 1260px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
