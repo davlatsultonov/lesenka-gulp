@@ -55,3 +55,52 @@ main {
 .header, .footer {
 	flex-shrink: 0;
 }
+
+.text {
+
+	&-red {
+		color: $base-red;
+	}
+
+	&-yellow {
+		color: $base-yellow;
+	}
+
+	&-black {
+		color: #000;
+	}
+
+	&-bold {
+		font-weight: 700;
+	}
+
+	&-thin {
+		font-weight: 400;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 24px;
+	color: $base-yellow;
+	margin-bottom: 22px;
+}
+
+h2 {
+	font-size: 18px;
+	color: $base-red;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 16px;
+	color: $base-red;
+	margin-bottom: 10px;
+}
