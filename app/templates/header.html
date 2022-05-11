@@ -1,20 +1,68 @@
 <header class="header">
-    <div class="text-with-icon">
-        <main>
-            <img src="../images/icons/menu/red/kindergarten.svg" alt="kid icon">
-            <p class="text-size-md text-red">Детский сад</p>
-        </main>
-        <footer>
-            <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 012-45-85</a>
-        </footer>
-    </div>
-    <div class="text-with-icon">
-        <main>
-            <img src="../images/icons/menu/red/development.svg" alt="development icon">
-            <p class="text-size-md text-red">Раннее развитие</p>
-        </main>
-        <footer>
-            <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 455-12-07</a>
-        </footer>
+    <div class="header__inner container">
+        <div class="header__item header__logo">
+            <a href="/" class="logo">
+                <img src="../images/icons/logo/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="header__item header__btn-menu visible-xs-l">
+            <div class="text-with-icon header__btn-hamburger">
+                <main>
+                    <img src="../images/icons/burger.svg" alt="hamburger icon">
+                    <p>
+                        Меню
+                    </p>
+                </main>
+            </div>
+        </div>
+
+        <div class="header__item hidden-xs-l">
+            <ul class="list list--horizontal">
+                <li class="list__item">
+                    <div class="text-with-icon">
+                        <main>
+                            <img src="../images/icons/menu/red/kindergarten.svg" alt="kid icon">
+                            <p class="text-size-md text-red">Детский сад</p>
+                        </main>
+                        <footer>
+                            <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 012-45-85</a>
+                        </footer>
+                    </div>
+                </li>
+                <li class="list__item hidden-msm">
+                    <div class="text-with-icon">
+                        <main>
+                            <img src="../images/icons/menu/red/development.svg" alt="development icon">
+                            <p class="text-size-md text-red">Раннее развитие</p>
+                        </main>
+                        <footer>
+                            <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 455-12-07</a>
+                        </footer>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header__item">
+            <a href="#" class="text-with-icon header__btn-visual-impaired">
+                <main>
+                    <img src="../images/icons/eye/eye_black.svg" class="hidden-md" alt="eye icon">
+                    <img src="../images/icons/eye/eye_red.svg" class="visible-md" alt="eye icon">
+                    <p class="text-size-sm text-link hidden-md">
+                        Версия для слабовидящих
+                    </p>
+                </main>
+            </a>
+        </div>
+        <div class="header__item">
+            <a href="#" class="text-with-icon header__btn-call-back">
+                <main>
+                    <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
+                    <p class="text-size-sm text-link">
+                        Обратный звонок
+                    </p>
+                </main>
+            </a>
+        </div>
     </div>
 </header>

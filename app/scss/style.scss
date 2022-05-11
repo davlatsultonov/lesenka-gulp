@@ -3,9 +3,10 @@
 @import "fonts";
 @import "reset";
 @import "global";
-// components
 @import "components/textwithicon";
 @import "components/list";
+// components
+@import "components/header";
 @import "visibility";
 @import "../../node_modules/owl.carousel/src/scss/owl.carousel";
 @import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
