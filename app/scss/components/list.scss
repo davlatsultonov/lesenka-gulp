@@ -1,0 +1,44 @@
+.list {
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &--gap {
+
+    &-md {
+
+      .list__item {
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &-sm {
+
+      .list__item {
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  &--horizontal {
+    display: flex;
+
+    .list__item {
+
+      &:not(:last-child) {
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
