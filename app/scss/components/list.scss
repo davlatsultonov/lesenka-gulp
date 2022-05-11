@@ -1,3 +1,9 @@
+.list-group {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px 30px;
+}
+
 .list {
 
   &__item {
