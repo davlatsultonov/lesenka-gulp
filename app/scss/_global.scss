@@ -9,7 +9,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: antialiased;
 	word-break: break-word;
-	color: #3e3e3e;
+	color: #000;
+	font-size: 14px;
+	line-height: normal;
 }
 
 input {
@@ -28,8 +30,19 @@ ul {
 	min-height: 100%;
 }
 
-.main {
-	flex: 1 0 auto;
+.content {
+	flex-grow: 1;
+	display: flex;
+}
+
+aside {
+	max-width: 266px;
+	width: 100%;
+	margin-right: 20px;
+}
+
+main {
+	width: calc(100% - 286px);
 }
 
 .container{
@@ -39,3 +52,6 @@ ul {
 	padding: 0 15px;
 }
 
+.header, .footer {
+	flex-shrink: 0;
+}
