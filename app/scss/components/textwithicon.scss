@@ -10,6 +10,10 @@
     footer {
         margin-top: 5px;
         margin-left: 33px;
+
+        & > *:not(:last-child) {
+            margin-bottom: 5px;
+        }
     }
 
     &__img {
@@ -22,5 +26,9 @@
         img {
             margin: auto;
         }
+    }
+
+    a {
+        display: inline-block;
     }
 }

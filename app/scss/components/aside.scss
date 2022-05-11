@@ -1,0 +1,17 @@
+.aside {
+  max-width: 266px;
+  width: 100%;
+  margin-right: 20px;
+
+  @media #{$xs-l} {
+    display: none;
+  }
+
+  &-list-group {
+
+
+    &__item:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+}
