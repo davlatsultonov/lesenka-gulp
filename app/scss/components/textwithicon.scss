@@ -9,10 +9,18 @@
 
     footer {
         margin-top: 5px;
-        margin-left: 30px;
+        margin-left: 33px;
     }
 
-    img + p {
-        margin-left: 10px;
+    &__img {
+        min-width: 24px;
+
+        &  + p {
+            margin-left: 10px;
+        }
+
+        img {
+            margin: auto;
+        }
     }
 }
