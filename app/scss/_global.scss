@@ -35,13 +35,13 @@ ul {
 	display: flex;
 }
 
-aside {
+.aside {
 	max-width: 266px;
 	width: 100%;
 	margin-right: 20px;
 }
 
-main {
+.main {
 	width: calc(100% - 286px);
 }
 
@@ -80,6 +80,25 @@ main {
 
 	&-uppercase {
 		text-transform: uppercase;
+	}
+
+	&-size {
+
+		&-lg {
+			font-size: 24px;
+		}
+
+		&-md {
+			font-size: 21px;
+		}
+
+		&-sm {
+			font-size: 18px;
+		}
+
+		&-xs {
+			font-size: 16px;
+		}
 	}
 }
 

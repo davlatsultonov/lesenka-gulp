@@ -1,0 +1,19 @@
+.text-with-icon {
+    display: inline-flex;
+    flex-direction: column;
+
+    main {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+
+    img {
+        width: 20px;
+        margin-right: 10px;
+    }
+}
