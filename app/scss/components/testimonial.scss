@@ -1,0 +1,50 @@
+.testimonial {
+  border-radius: 10px;
+  box-shadow: $base-shadow;
+  padding: 20px;
+
+  h3 {
+    color: #000;
+    margin-bottom: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__date {
+    margin-top: 5px;
+    color: #505050;
+  }
+
+  &__desc {
+    margin-top: 10px;
+    @include ellipsis(5);
+  }
+
+  &__btn {
+    margin-top: 15px;
+  }
+
+  .testimonial-gallery {
+    margin-top: 15px;
+  }
+}
+
+.testimonial-gallery {
+  display: flex;
+
+  &__img {
+    width: 64px;
+    height: 60px;
+    @include background-cover;
+    border-radius: 10px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}

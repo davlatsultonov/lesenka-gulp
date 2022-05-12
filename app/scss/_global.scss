@@ -152,6 +152,11 @@ p {
 			font-size: 16px;
 			line-height: 21px;
 		}
+
+		&-xxs {
+			font-size: 14px;
+			line-height: 18px;
+		}
 	}
 
 	&-link {
@@ -179,4 +184,14 @@ h3 {
 	font-size: 16px;
 	color: $base-red;
 	margin-bottom: 10px;
+}
+
+.title-with-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	*:last-child {
+		margin-left: 10px;
+	}
 }
