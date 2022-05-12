@@ -1,7 +1,15 @@
 .aside {
-  max-width: 266px;
+  max-width: 300px;
   width: 100%;
   margin-right: 20px;
+
+  @media #{$mid-large} {
+    max-width: 245px;
+  }
+
+  @media #{$msm} {
+    max-width: 225px;
+  }
 
   @media #{$xs-l} {
     display: none;

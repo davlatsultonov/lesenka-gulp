@@ -1,0 +1,59 @@
+.banner {
+  width: calc(100% - 15px);
+  padding: 60px;
+  background: $dark-red url("../../images/banner/img_1.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 0 0 15px rgba(245, 209, 195, .74);
+
+  @media #{$md} {
+    padding: 25px 30px;
+  }
+
+  @media #{$xs-l} {
+    margin: 25px auto 0;
+    max-width: calc(100% - 30px);
+    padding-bottom: 125px;
+  }
+
+  *:not(.button) {
+    color: inherit;
+  }
+
+  h1 {
+    font-size: 34px;
+
+    @media #{$md} {
+      font-size: 28px;
+    }
+
+    @media #{$xs-l} {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .text-size-xs {
+
+    @media #{$xs-l} {
+      font-size: 14px;
+    }
+  }
+
+  .button {
+    margin-top: 30px;
+
+    @media #{$xs-l} {
+      margin-top: 10px;
+    }
+  }
+
+  &__inner {
+    max-width: 400px;
+
+    @media #{$md} {
+      max-width: 350px;
+    }
+  }
+}
