@@ -48,6 +48,36 @@
     }
   }
 
+  &--steps {
+
+    .card {
+      padding: 20px 30px;
+
+      &__desc {
+        max-width: 72%;
+
+        @media #{$lg} {
+          max-width: 100%;
+        }
+
+        @media #{$md} {
+          max-width: 72%;
+        }
+
+        @media #{$msm} {
+          max-width: 100%;
+        }
+      }
+    }
+
+    p {
+
+      @media #{$xs} {
+        font-size: 14px;
+      }
+    }
+  }
+
   @media #{$md} {
     --cols-2: 1;
     --cols-3: 2;
