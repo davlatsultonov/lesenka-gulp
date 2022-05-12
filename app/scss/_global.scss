@@ -28,6 +28,10 @@ a {
 	color: #000;
 }
 
+p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -55,6 +59,29 @@ a {
 
 	@media #{$xs-l} {
 		width: 100%;
+	}
+
+	&--home {
+
+		.achievements, section:not(:last-child) {
+			margin-bottom: 50px;
+		}
+
+
+		section {
+			display: grid;
+			grid-template-columns: minmax(250px, 500px) minmax(250px, 375px);
+			grid-column-gap: 60px;
+
+			@media #{$mid-large} {
+				grid-column-gap: 20px;
+				grid-template-columns: minmax(250px, 375px) minmax(250px, 375px);
+			}
+
+			@media #{$md} {
+				grid-template-columns: 1fr;
+			}
+		}
 	}
 }
 
