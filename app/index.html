@@ -3,64 +3,64 @@
 @@include('./templates/head.html')
 <body>
 <div class="wrapper">
-  @@include('./templates/header.html')
-  <div class="content">
-    <div class="content__inner container">
-      @@include('./templates/aside.html')
-      <main class="main">
-        <div class="slider-wrapper owl-theme">
-            <div class="banner owl-carousel banner--js-slider">
-                <div class="banner__item"
-                     style="background:  url('images/banner/img_1.jpg') no-repeat center">
-                    <div class="banner__inner">
-                        <h1>
-                            Хотите узнать о нашем Монтессори-центре?
-                        </h1>
-                        <p class="text-size-xs text-bold">
-                            Скачайте презентацию о сиситеме Монтессори
-                        </p>
+    @@include('./templates/header.html')
+    <div class="content">
+        <div class="content__inner container">
+            @@include('./templates/aside.html')
+            <main class="main">
+                <div class="slider-wrapper owl-theme">
+                    <div class="banner owl-carousel banner--js-slider">
+                        <div class="banner__item"
+                             style="background:  url('images/banner/img_1.jpg') no-repeat center">
+                            <div class="banner__inner">
+                                <h1>
+                                    Хотите узнать о нашем Монтессори-центре?
+                                </h1>
+                                <p class="text-size-xs text-bold">
+                                    Скачайте презентацию о сиситеме Монтессори
+                                </p>
+                            </div>
+                            <a href="#" target="_blank" class="button button--filled-white">
+                                <span class="text-uppercase text-bold">Скачать сейчас</span>
+                                <img src="./images/icons/download.svg" alt="download icon">
+                            </a>
+                        </div>
                     </div>
-                    <a href="#" target="_blank" class="button button--filled-white">
-                        <span class="text-uppercase text-bold">Скачать сейчас</span>
-                        <img src="./images/icons/download.svg" alt="download icon">
-                    </a>
+                    <div class="slider-navigation">
+                        <div class="container">
+                            <div id="slider-dots" class="owl-dot"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-navigation">
-                <div class="container">
-                    <div id="slider-dots" class="owl-dot"></div>
-                </div>
-            </div>
+
+                <h1>Наши достижения</h1>
+
+                <ul class="achievements">
+                    <li class="achievements__item">
+                        <h2>20 лет</h2>
+                        <p>работы центра</p>
+                    </li>
+                    <li class="achievements__item">
+                        <h2>600 <small>кв.м</small></h2>
+                        <p>помещение центра</p>
+                    </li>
+                    <li class="achievements__item">
+                        <h2>3 <small>игровые</small></h2>
+                        <p>комнаты развития</p>
+                    </li>
+                    <li class="achievements__item">
+                        <h2>20 <small>постоянных</small></h2>
+                        <p>преподавателей</p>
+                    </li>
+                    <li class="achievements__item">
+                        <h2>50 <small>кв.м</small></h2>
+                        <p>спортивное поле</p>
+                    </li>
+                </ul>
+            </main>
         </div>
-
-        <h1>Наши достижения</h1>
-
-        <ul class="achievements">
-            <li class="achievements__item">
-              <h2>20 лет</h2>
-              <p>работы центра</p>
-            </li>
-            <li class="achievements__item">
-              <h2>600 <small>кв.м</small></h2>
-              <p>помещение центра</p>
-            </li>
-            <li class="achievements__item">
-              <h2>3 <small>игровые</small></h2>
-              <p>комнаты развития</p>
-            </li>
-            <li class="achievements__item">
-              <h2>20 <small>постоянных</small></h2>
-              <p>преподавателей</p>
-            </li>
-            <li class="achievements__item">
-              <h2>50 <small>кв.м</small></h2>
-              <p>спортивное поле</p>
-            </li>
-        </ul>
-      </main>
     </div>
-  </div>
-  @@include('./templates/footer.html')
+    @@include('./templates/footer.html')
 </div>
 
 @@include('./templates/scriptTag.html')
