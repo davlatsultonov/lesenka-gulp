@@ -1,21 +1,34 @@
 .banner {
-  width: calc(100% - 15px);
-  padding: 60px;
-  background: #991f37 url("../../images/banner/img_1.jpg") no-repeat center;
-  background-size: cover;
+  width: calc(100% - 15px) !important;
   border-radius: 20px;
   color: #fff;
   box-shadow: 0 0 0 15px rgba(245, 209, 195, .74);
   margin-bottom: 40px;
-
-  @media #{$md} {
-    padding: 25px 30px;
-  }
+  overflow: hidden;
 
   @media #{$xs-l} {
+    max-width: calc(100% - 30px) !important;
     margin: 25px auto 30px;
-    max-width: calc(100% - 30px);
-    padding-bottom: 125px;
+  }
+
+  &__item {
+    padding: 60px;
+    background-size: cover !important;
+
+
+    @media #{$md} {
+      padding: 25px 30px 100px;
+    }
+
+    @media #{$xs-l} {
+      padding-bottom: 125px;
+    }
+
+    @media #{$xxs} {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 90px;
+    }
   }
 
   *:not(.button) {
@@ -32,6 +45,10 @@
     @media #{$xs-l} {
       font-size: 24px;
       margin-bottom: 10px;
+    }
+
+    @media #{$xxs} {
+      font-size: 21px;
     }
   }
 

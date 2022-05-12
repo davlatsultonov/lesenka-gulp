@@ -1,0 +1,33 @@
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-navigation {
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
+}
+
+
+#slider-dots {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+
+  .owl-dot {
+    margin: 7.5px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #9b1f39;
+    border: 1px solid #fff;
+
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
