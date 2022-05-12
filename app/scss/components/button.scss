@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 15px 10px;
+  border-radius: 8px;
+
+  img + span, span + img {
+    margin-left: 15px;
+  }
+
+  &--link {
+    color: $base-red;
+    text-decoration: underline;
+    line-height: normal;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  &--filled {
+    background-color: $base-red;
+    color: #fff;
+
+    &-with-white {
+      background-color: #fff;
+      color: $base-red;
+    }
+  }
+
+  &--contour {
+    border: 1px solid $base-red;
+    background-color: transparent;
+    color: $base-red;
+  }
+}

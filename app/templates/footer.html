@@ -11,42 +11,42 @@
                     <ul class="list list--gap-md list-group__item">
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/about_us.svg" alt="about us icon">
-                            </span>
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/about_us.svg" alt="about us icon">
+                                    </span>
                                     <p class="text-size-sm text-red">О нас</p>
-                                </main>
+                                </div>
                             </a>
                         </li>
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/team.svg" alt="team icon">
-                            </span>
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/team.svg" alt="team icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Команда</p>
-                                </main>
+                                </div>
                             </a>
                         </li>
                     </ul>
                     <ul class="list list--gap-md list-group__item">
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/kindergarten.svg" alt="kindergarten icon">
-                            </span>
+                                <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/kindergarten.svg" alt="kindergarten icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Десткий сад</p>
                                 </main>
                             </a>
                         </li>
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/development.svg" alt="development icon">
-                            </span>
+                                <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/development.svg" alt="development icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Ранее развитие</p>
                                 </main>
                             </a>
@@ -55,97 +55,81 @@
                     <ul class="list list--gap-md list-group__item">
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/testimonial.svg" alt="testimonial icon">
-                            </span>
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/testimonial.svg" alt="testimonial icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Отзывы</p>
-                                </main>
+                                </div>
                             </a>
                         </li>
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/gallery.svg" alt="gallery icon">
-                            </span>
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/gallery.svg" alt="gallery icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Фотогалерея</p>
-                                </main>
+                                </div>
                             </a>
                         </li>
                     </ul>
                     <ul class="list list--gap-md list-group__item">
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/user.svg" alt="user. icon">
-                            </span>
+                                <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/user.svg" alt="user. icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Родителям</p>
                                 </main>
                             </a>
                         </li>
                         <li class="list__item">
                             <a href="#" class="text-with-icon">
-                                <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
-                            </span>
+                                <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
+                                    </span>
                                     <p class="text-size-sm text-red">Контакты</p>
                                 </main>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <ul class="list list--gap-sm footer__policy hidden-md">
-                    <li class="list__item">
-                        <a href="#" class="text-link">
-                            Политика информационной безопасности
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="text-link">
-                            Документы и стандарты
-                        </a>
-                    </li>
-                </ul>
+
+                @@include('./footerPolicy.html', { "class":  "hidden-md"})
             </div>
-            <div class="footer__item">
+            <div class="footer__item footer__item--response">
                 <ul class="list list--gap-md">
                     <li class="list__item">
                         <a href="tel:+7 (383) 299-53-46" class="text-with-icon">
-                            <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
-                            </span>
+                            <div class="text-with-icon__content">
+                                <span class="text-with-icon__img">
+                                    <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
+                                </span>
                                 <p class="text-size-sm">+7 (383) 299-53-46</p>
-                            </main>
+                            </div>
                         </a>
                     </li>
                     <li class="list__item">
                         <a href="tel:+7 (913) 012-45-85" class="text-with-icon">
-                            <main>
-                            <span class="text-with-icon__img">
-                                <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
-                            </span>
+                            <div class="text-with-icon__content">
+                                <span class="text-with-icon__img">
+                                    <img src="../images/icons/menu/red/phone.svg" alt="phone icon">
+                                </span>
                                 <p class="text-size-sm">+7 (913) 012-45-85</p>
-                            </main>
+                            </div>
                         </a>
                     </li>
                 </ul>
 
-                <ul class="list list--gap-sm footer__policy visible-md">
-                    <li class="list__item">
-                        <a href="#" class="text-link">
-                            Политика информационной безопасности
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#" class="text-link">
-                            Документы и стандарты
-                        </a>
-                    </li>
-                </ul>
+                <button class="button button--contour">
+                    <img src="../images/icons/question.svg" alt="question icon">
+                    <span class="text-size-xs text-bold text-red">Задать вопрос</span>
+                </button>
+
+                @@include('./footerPolicy.html', { "class":  "visible-md"})
             </div>
         </div>
     </div>
