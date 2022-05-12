@@ -4,6 +4,7 @@
   position: fixed;
   @include positionExtend;
   padding: 20px;
+  z-index: $layer-1;
 
   &.active {
     display: block;

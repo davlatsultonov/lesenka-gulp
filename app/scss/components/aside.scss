@@ -16,10 +16,15 @@
   }
 
   &-list-group {
-
+    margin-bottom: 50px;
 
     &__item:not(:last-child) {
       margin-bottom: 50px;
     }
+  }
+
+  &-card {
+    max-width: 185px;
+    width: 100%;
   }
 }

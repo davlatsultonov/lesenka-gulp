@@ -80,6 +80,7 @@ p:not(:last-child) {
 
 			@media #{$md} {
 				grid-template-columns: 1fr;
+				grid-row-gap: 50px;
 			}
 		}
 	}
@@ -120,6 +121,10 @@ p:not(:last-child) {
 
 	&-uppercase {
 		text-transform: uppercase;
+	}
+
+	&-center {
+		text-align: center;
 	}
 
 	&-size {

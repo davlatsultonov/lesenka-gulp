@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    @include background-cover;
+    box-shadow: $base-shadow;
+    border-radius: $base-border-radius;
+    height: 200px;
+    margin-bottom: 20px;
+
+    &--lg {
+      height: 250px;
+    }
+
+    &--sm {
+      height: 150px;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+
+  h2 + .card__desc, .card__desc + h2 {
+    margin-top: 10px;
+  }
+
+  &--compact {
+    box-shadow: $base-shadow;
+    padding: 15px 10px;
+    border-radius: $base-border-radius;
+
+    .card__img {
+      box-shadow: none;
+      border-radius: 0;
+      height: auto;
+
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
