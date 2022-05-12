@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('[type="tel"]').mask('+7 (000) 000-0000');
+
     $('.menu-toggle-btn').on('click', function () {
         $('.mobile-menu').toggleClass('active')
     })
@@ -13,6 +15,22 @@ $(document).ready(function(){
             dotsContainer: '#slider-dots',
         })
     }
+
+    let selectDefaultItem = $('.select-block__default'),
+        selectDropdownList =  $('.select-block__list'),
+        selectDropdownItems =  $('.select-block__list li');
+
+    selectDefaultItem.click(function () {
+        $(this).parent().toggleClass('active');
+    });
+
+    selectDropdownList.css('width', selectDropdownList.parent().outerWidth() + 'px');
+
+    selectDropdownItems.click(function () {
+        let current = $(this).html();
+        selectDefaultItem.find('li').html(current);
+        $(this).parents('.select-block').removeClass('active');
+    });
 });
 
 function setDynamicWidthToSliderNav() {
