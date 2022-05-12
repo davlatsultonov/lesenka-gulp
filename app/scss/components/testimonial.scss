@@ -37,10 +37,14 @@
   display: flex;
 
   &__img {
-    width: 64px;
-    height: 60px;
-    @include background-cover;
-    border-radius: 10px;
+
+    span {
+      display: inline-block;
+      width: 64px;
+      height: 60px;
+      @include background-cover;
+      border-radius: 10px;
+    }
 
     &:not(:last-child) {
       margin-right: 15px;

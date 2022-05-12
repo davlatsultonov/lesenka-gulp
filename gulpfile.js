@@ -45,6 +45,7 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
         'node_modules/owl.carousel/dist/owl.carousel.min.js',
+        'node_modules/simplelightbox/dist/simple-lightbox.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -55,7 +56,7 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src(['app/scss/style.scss', 'node_modules/simplelightbox/src/simple-lightbox.scss'])
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({

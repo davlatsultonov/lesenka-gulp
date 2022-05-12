@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    new SimpleLightbox('.testimonial-gallery a', { /* options */ });
+
     $('[type="tel"]').mask('+7 (000) 000-0000');
 
     $('.menu-toggle-btn').on('click', function () {
