@@ -9,6 +9,16 @@
   z-index: 1;
 }
 
+.slider-hash-navigation {
+
+  &__img {
+    display: inline-block;
+    width: 64px;
+    height: 60px;
+    border-radius: $base-border-radius;
+    @include background-cover;
+  }
+}
 
 #slider-dots {
   display: inline-block;

@@ -54,17 +54,9 @@
       padding: 20px 30px;
 
       &__desc {
-        max-width: 72%;
+        max-width: 78%;
 
         @media #{$lg} {
-          max-width: 100%;
-        }
-
-        @media #{$md} {
-          max-width: 72%;
-        }
-
-        @media #{$msm} {
           max-width: 100%;
         }
       }

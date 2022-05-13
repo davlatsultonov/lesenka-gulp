@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    new SimpleLightbox('.testimonial-gallery a', { /* options */ });
+    //new SimpleLightbox('.testimonial-gallery a', { /* options */ });
 
     $('[type="tel"]').mask('+7 (000) 000-0000');
 
@@ -9,12 +9,37 @@ $(document).ready(function(){
     })
 
     const $sliderBanner = $('.banner--js-slider');
+    const $sliderGallery = $('.gallery--js-slider');
+
+    if ($sliderGallery.length) {
+        const hasSliderChildren = $sliderGallery.find('.gallery__item').length > 1;
+
+        $sliderGallery.owlCarousel({
+            ...baseSliderOptions({
+                hasSliderChildren,
+                configs: {
+                    dots: false
+                }
+            }),
+        })
+
+        $('.gallery-hash-navigation').owlCarousel({
+            ...baseSliderOptions({
+                configs: {
+                    loop: false,
+                    dots: false,
+                    items: 4
+                }
+            }),
+        })
+    }
+
 
     if ($sliderBanner.length) {
-        const $hasSliderChildren = $sliderBanner.find('.banner__item').length > 1;
+        const hasSliderChildren = $sliderBanner.find('.banner__item').length > 1;
 
         $sliderBanner.owlCarousel({
-            ...baseSliderOptions($sliderBanner, $hasSliderChildren),
+            ...baseSliderOptions({ hasSliderChildren }),
             dotsContainer: '#slider-dots',
         })
     }
@@ -45,7 +70,7 @@ function setDynamicWidthToSliderNav() {
         .height(sliderDots.height());
 }
 
-function baseSliderOptions(slider, hasSliderChildren) {
+function baseSliderOptions({ hasSliderChildren = false, configs = {} } = {}) {
     return {
         loop: true,
         items: 1,
@@ -54,5 +79,6 @@ function baseSliderOptions(slider, hasSliderChildren) {
         touchDrag: hasSliderChildren,
         mouseDrag: hasSliderChildren,
         dots: hasSliderChildren,
+        ...configs
     }
 }

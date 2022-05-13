@@ -1,0 +1,22 @@
+.gallery {
+  border: 15px solid #fff;
+  border-radius: $base-border-radius;
+  box-shadow: $base-shadow;
+
+  &__item {
+    @include background-cover;
+    width: 100%;
+    height: 250px;
+    border-radius: $base-border-radius;
+  }
+
+  &-hash-navigation {
+    justify-content: center;
+    width: 286px !important;
+    margin: 20px auto 0;
+
+    .owl-stage {
+      margin: auto;
+    }
+  }
+}
