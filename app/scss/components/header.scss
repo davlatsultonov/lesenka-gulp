@@ -1,6 +1,6 @@
 .header {
-  margin-bottom: 22px;
-  margin-top: 30px;
+  padding-bottom: 22px;
+  padding-top: 30px;
 
   @media #{$xs-l} {
     box-shadow: $base-shadow;
@@ -8,6 +8,11 @@
     overflow: hidden;
     position: relative;
     margin-top: 0;
+  }
+
+  &.container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &__inner {
@@ -55,6 +60,7 @@
   &__btn {
 
     @mixin mobileBtnStyles() {
+      background-color: #fff;
       align-items: center;
       justify-content: center;
       width: 44px;
@@ -143,6 +149,28 @@
         order: -1;
         margin-right: auto;
       }
+    }
+  }
+
+  &--decor {
+    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 17.5% -6px,
+                url("../../images/bg_decor/flowers/single.svg") no-repeat 80% -23px,
+                url("../../images/bg_decor/flowers/bunch.svg") no-repeat 95% 6px;
+
+    @media #{$mid-large} {
+      background-position: 14.5% -25px, 70% -40px, 95% -8px;
+    }
+
+    @media #{$md} {
+      background-position: 19.5% -25px, 75% -40px, 97% -5px;
+    }
+
+    @media #{$msm} {
+      background-position: 29.5% -18px, 74% -38px, 95% 6px;
+    }
+
+    @media #{$xs-l} {
+      background: none;
     }
   }
 
