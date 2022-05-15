@@ -1,6 +1,117 @@
 .decor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  * {
+    position: absolute;
+  }
 
   &--teapot {
+    width: auto;
+    height: auto;
+    position: relative;
     margin: 60px 0 35px -40px;
+
+    * {
+      position: relative;
+    }
+  }
+
+  &--footer {
+
+    img {
+
+      /* thick crooked */
+      &:nth-child(1) {
+        top: -31px;
+        left: -24px;
+      }
+      /* thin long */
+      &:nth-child(2) {
+        top: -44px;
+        left: 33px;
+        z-index: calc(var(--base-layer) + 1);
+      }
+      /* flower */
+      &:nth-child(3) {
+        bottom: -30px;
+        left: -40px;
+        z-index: calc(var(--base-layer) + 1);
+
+        @media #{$xs-l} {
+          top: 40px;
+          left: -30px;
+        }
+
+        @media #{$xs} {
+          top: 50px;
+          left: -55px;
+        }
+
+        @media #{$xxs} {
+          left: -60px;
+        }
+      }
+      /* thick horizontal */
+      &:nth-child(4) {
+        bottom: -40px;
+        left: 10px;
+        z-index: calc(var(--base-layer) - 1);
+
+        @media #{$xs-l} {
+          display: none;
+        }
+      }
+      /* dots */
+      &:nth-child(5) {
+        top: -50px;
+        right: 126px;
+        z-index: calc(var(--base-layer) - 1);
+      }
+      /* thick crooked */
+      &:nth-child(6) {
+        top: -31px;
+        right: -33px;
+        z-index: calc(var(--base-layer) - 2);
+      }
+      /* echo */
+      &:nth-child(7) {
+        bottom: -4px;
+        right: -23px;
+        z-index: calc(var(--base-layer) + 1);
+
+        @media #{$xs-l} {
+          top: 146px;
+          right: -52px;
+        }
+      }
+    }
+  }
+
+  &--banner {
+
+    img {
+      /* thick circle */
+      &:nth-child(1) {
+        top: -33px;
+        left: -43px;
+      }
+      /* thin longest */
+      &:nth-child(2) {
+        top: -33px;
+        right: -49px;
+      }
+      /* dots */
+      &:nth-child(3) {
+        top: 88px;
+        right: -54px;
+      }
+      /* dashes */
+      &:nth-child(4) {
+        bottom: -40px;
+        right: 15px;
+      }
+    }
   }
 }

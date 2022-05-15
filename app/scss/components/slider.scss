@@ -1,12 +1,43 @@
 .slider-wrapper {
   position: relative;
+
+  &--banner {
+    --indent: 50px;
+    padding: var(--indent);
+    margin: calc(var(--indent) * -1);
+    background: url("../../images/bg_decor/drafts/thick_circle.svg") no-repeat 25px 30px,
+                url("../../images/bg_decor/drafts/thin_longest.svg") no-repeat 98.5% 30px,
+                url("../../images/bg_decor/drafts/dots.svg") no-repeat 100% 150px,
+                url("../../images/bg_decor/drafts/dashes.svg") no-repeat 93% 88%;
+
+    @media #{$xlg} {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    @media #{$xs-l} {
+      --indent: 17px;
+      background-position: 0 30px, 101% 30px, 100% 150px, 93% 95%;
+    }
+
+    .slider-navigation {
+      bottom: 125px;
+      width: calc(100% - 50px);
+      right: 0;
+
+      @media #{$xs-l} {
+        bottom: 75px;
+      }
+    }
+  }
 }
 
 .slider-navigation {
   width: 100%;
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
   z-index: 1;
+  text-align: center;
 }
 
 .slider-hash-navigation {
@@ -22,9 +53,6 @@
 
 #slider-dots {
   display: inline-block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   margin-top: 0;
 
   .owl-dot {
