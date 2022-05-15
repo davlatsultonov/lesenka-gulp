@@ -1,3 +1,19 @@
+.hidden-xlg {
+  display: none;
+
+  &-flex {
+    display: none;
+  }
+}
+
+.visible-xlg {
+  display: block;
+
+  &-flex {
+    display: block;
+  }
+}
+
 .hidden-md {
   display: block;
 
@@ -21,7 +37,7 @@
 
   &-flex {
     @media #{$xlg} {
-      display: none;
+      display: flex;
     }
   }
 }
@@ -49,7 +65,7 @@
 
   &-flex {
     @media #{$md} {
-      display: none;
+      display: flex;
     }
   }
 }
@@ -77,7 +93,7 @@
 
   &-flex {
     @media #{$sm} {
-      display: none;
+      display: flex;
     }
   }
 }
