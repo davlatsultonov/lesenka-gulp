@@ -1,17 +1,20 @@
 .footer-wrapper {
-  margin-top: 80px;
+  padding-top: 80px;
+  overflow: hidden;
 }
 
 .footer {
-  background-color: #fdf0df;
   max-width: 1360px;
   width: calc(100% - 30px);
-  border-radius: 10px;
   margin: auto;
+  position: relative;
+  --base-layer: 30;
 
   &__inner {
     display: flex;
     padding: 34px 20px;
+    position: relative;
+    z-index: var(--base-layer);
 
     @media (max-width: 1250px) {
       justify-content: space-between;
@@ -125,6 +128,93 @@
     @media #{$msm} {
       font-size: 12px;
     }
+  }
+
+  &__decor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    * {
+      position: absolute;
+    }
+
+    img {
+
+      /* thick crooked */
+      &:nth-child(1) {
+        top: -31px;
+        left: -24px;
+      }
+      /* thin long */
+      &:nth-child(2) {
+        top: -44px;
+        left: 33px;
+        z-index: calc(var(--base-layer) + 1);
+      }
+      /* flower */
+      &:nth-child(3) {
+        bottom: -30px;
+        left: -40px;
+        z-index: calc(var(--base-layer) + 1);
+
+        @media #{$xs-l} {
+          top: 40px;
+          left: -30px;
+        }
+
+        @media #{$xs} {
+          top: 50px;
+          left: -55px;
+        }
+
+        @media #{$xxs} {
+          left: -60px;
+        }
+      }
+      /* thick horizontal */
+      &:nth-child(4) {
+        bottom: -40px;
+        left: 10px;
+        z-index: calc(var(--base-layer) - 1);
+
+        @media #{$xs-l} {
+          display: none;
+        }
+      }
+      /* dots */
+      &:nth-child(5) {
+        top: -50px;
+        right: 126px;
+        z-index: calc(var(--base-layer) - 1);
+      }
+      /* thick crooked */
+      &:nth-child(6) {
+        top: -31px;
+        right: -33px;
+        z-index: calc(var(--base-layer) - 2);
+      }
+      /* echo */
+      &:nth-child(7) {
+        bottom: -4px;
+        right: -23px;
+        z-index: calc(var(--base-layer) + 1);
+
+        @media #{$xs-l} {
+          top: 146px;
+          right: -52px;
+        }
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    background-color: #fdf0df;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: var(--base-layer);
   }
 
   &-copyright {
