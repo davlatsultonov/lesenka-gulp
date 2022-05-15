@@ -39,12 +39,7 @@
         left: -40px;
         z-index: calc(var(--base-layer) + 1);
 
-        @media #{$xs-l} {
-          top: 40px;
-          left: -30px;
-        }
-
-        @media #{$xs} {
+        @media #{$sm} {
           top: 50px;
           left: -55px;
         }
@@ -59,7 +54,7 @@
         left: 10px;
         z-index: calc(var(--base-layer) - 1);
 
-        @media #{$xs-l} {
+        @media #{$sm} {
           display: none;
         }
       }
@@ -81,7 +76,7 @@
         right: -23px;
         z-index: calc(var(--base-layer) + 1);
 
-        @media #{$xs-l} {
+        @media #{$sm} {
           top: 146px;
           right: -52px;
         }

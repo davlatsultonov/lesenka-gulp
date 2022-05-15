@@ -1,6 +1,4 @@
 .header {
-  padding-bottom: 22px;
-  padding-top: 30px;
 
   @media #{$sm} {
     box-shadow: $base-shadow;
@@ -19,14 +17,20 @@
     display: flex;
     align-items: center;
     height: 100%;
+    padding-bottom: 22px;
+    padding-top: 30px;
 
     @media #{$xlg} {
+      padding-top: 0;
+      padding-bottom: 0;
       justify-content: space-between;
     }
   }
 
   &__item {
     margin-right: 52px;
+    display: inline-flex;
+    align-items: center;
 
     @media #{$xlg} {
       margin-right: 0;
@@ -64,19 +68,20 @@
       border: 1px solid $base-red;
       border-radius: 5px;
 
-      @media #{$sm} {
+      @media #{$xxs} {
         width: 35px;
       }
     }
 
     &-hamburger {
       @include mobileBtnStyles;
-      width: auto;
-      padding-left: 15px;
-      padding-right: 15px;
+      align-items: baseline;
+      width: 98px;
+      padding-left: 8px;
+      padding-right: 8px;
       color: $base-red;
 
-      @media #{$sm} {
+      @media #{$xxs} {
         width: 35px;
         padding-left: 5px;
         padding-right: 5px;
@@ -84,8 +89,9 @@
 
       p {
         margin-top: 1px;
+        margin-left: 5px;
 
-        @media #{$sm} {
+        @media #{$xxs} {
           display: none;
         }
       }
@@ -149,7 +155,7 @@
   }
 
   &--decor {
-    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 17.5% -6px,
+    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 195px -6px,
                 url("../../images/bg_decor/flowers/single.svg") no-repeat 80% -23px,
                 url("../../images/bg_decor/flowers/bunch.svg") no-repeat 95% 6px;
 

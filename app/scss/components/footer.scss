@@ -10,6 +10,10 @@
   position: relative;
   --base-layer: 30;
 
+  @media #{$sm} {
+    max-width: $screen-xs;
+  }
+
   &__inner {
     display: flex;
     padding: 34px 20px;
