@@ -15,7 +15,7 @@
       margin-right: 0;
     }
 
-    @media #{$xs-l} {
+    @media #{$sm} {
       --indent: 17px;
       background-position: 0 30px, 101% 30px, 100% 150px, 93% 95%;
     }
@@ -25,7 +25,7 @@
       width: calc(100% - 50px);
       right: 0;
 
-      @media #{$xs-l} {
+      @media #{$sm} {
         bottom: 75px;
       }
     }
