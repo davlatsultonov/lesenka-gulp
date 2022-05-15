@@ -77,15 +77,15 @@ p {
 .main {
 	width: calc(100% - 320px);
 
-	@media #{$mid-large} {
+	@media #{$xlg} {
 		width: calc(100% - 265px);
 	}
 
-	@media #{$msm} {
+	@media #{$md} {
 		width: calc(100% - 245px);
 	}
 
-	@media #{$xs-l} {
+	@media #{$sm} {
 		width: 100%;
 	}
 
@@ -104,7 +104,7 @@ p {
 				&:first-child {
 					width: calc(100% - 450px);
 
-					@media #{$lg} {
+					@media #{$xlg} {
 						width: calc(100% - 380px);
 					}
 
@@ -116,7 +116,7 @@ p {
 				&:last-child {
 					width: 367px;
 
-					@media #{$lg} {
+					@media #{$xlg} {
 						width: 320px;
 					}
 
