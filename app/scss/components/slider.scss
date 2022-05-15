@@ -10,13 +10,13 @@
                 url("../../images/bg_decor/drafts/dots.svg") no-repeat 100% 150px,
                 url("../../images/bg_decor/drafts/dashes.svg") no-repeat 93% 88%;
 
-    @media #{$xlg} {
-      padding-right: 0;
-      margin-right: 0;
+    @media #{$md} {
+      --indent: 18px;
+      background-position: 0 18px, 100% 5px, 100% 130px, 92% 90%;
     }
 
     @media #{$sm} {
-      --indent: 17px;
+      --indent: 10px;
       background-position: 0 30px, 101% 30px, 100% 150px, 93% 95%;
     }
 

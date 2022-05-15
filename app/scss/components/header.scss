@@ -19,26 +19,17 @@
     height: 100%;
     padding-bottom: 22px;
     padding-top: 30px;
+    justify-content: space-between;
 
     @media #{$xlg} {
       padding-top: 0;
       padding-bottom: 0;
-      justify-content: space-between;
     }
   }
 
   &__item {
-    margin-right: 52px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-
-    @media #{$xlg} {
-      margin-right: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &__logo {
