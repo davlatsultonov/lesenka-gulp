@@ -3,15 +3,15 @@
   width: 100%;
   margin-right: 20px;
 
-  @media #{$mid-large} {
+  @media #{$xlg} {
     max-width: 245px;
   }
 
-  @media #{$msm} {
+  @media #{$md} {
     max-width: 225px;
   }
 
-  @media #{$xs-l} {
+  @media #{$sm} {
     display: none;
   }
 

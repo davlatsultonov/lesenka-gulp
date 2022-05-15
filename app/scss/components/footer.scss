@@ -10,22 +10,26 @@
   position: relative;
   --base-layer: 30;
 
+  @media #{$sm} {
+    max-width: $screen-xs;
+  }
+
   &__inner {
     display: flex;
     padding: 34px 20px;
     position: relative;
     z-index: var(--base-layer);
 
-    @media (max-width: 1250px) {
+    @media #{$xlg} {
       justify-content: space-between;
     }
 
-    @media (max-width: 960px) {
+    @media #{$md} {
       padding-top: 10px;
       flex-direction: column;
     }
 
-    @media #{$msm} {
+    @media #{$sm} {
       max-width: 290px;
     }
   }
@@ -35,7 +39,7 @@
     &:not(:last-child) {
       margin-right: 60px;
 
-      @media (max-width: 1250px) {
+      @media #{$xlg} {
         margin-right: 0;
       }
     }
@@ -43,30 +47,27 @@
     .list + .button {
       margin-top: 33px;
 
-      @media (max-width: 960px) {
+      @media #{$md} {
         margin-top: 0;
         margin-left: 26px;
       }
 
-      @media (max-width: 730px) {
+      @media #{$sm} {
         margin-top: 33px;
-      }
-
-      @media #{$msm} {
         margin-left: 0;
       }
     }
 
     &--response {
 
-      @media (max-width: 960px) {
+      @media #{$md} {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
       }
 
-      @media (max-width: 730px) {
+      @media #{$sm} {
         display: block;
       }
     }
@@ -76,11 +77,11 @@
     max-width: 236px;
     margin-right: 45px;
 
-    @media (max-width: 1250px) {
+    @media #{$xlg} {
       margin-right: 0;
     }
 
-    @media (max-width: 960px) {
+    @media #{$md} {
       margin-bottom: 30px;
       align-self: center;
     }
@@ -89,19 +90,15 @@
   &__list-group {
     margin-bottom: 35px;
 
-    @media (max-width: 1170px) {
+    @media #{$xlg} {
       grid-template-columns: repeat(3, auto);
     }
 
     @media #{$md} {
-      grid-template-columns: repeat(2, auto);
-    }
-
-    @media (max-width: 960px) {
       grid-template-columns: repeat(4, auto);
     }
 
-    @media #{$msm} {
+    @media #{$sm} {
       grid-template-columns: repeat(1, auto);
     }
   }
@@ -109,23 +106,13 @@
   &__policy {
 
     @media #{$md} {
-      margin-top: 20px;
-    }
-
-    @media (max-width: 960px) {
       margin-top: 0;
       margin-left: 26px;
     }
 
     @media #{$sm} {
       margin-top: 20px;
-    }
-
-    @media #{$msm} {
       margin-left: 0;
-    }
-
-    @media #{$msm} {
       font-size: 12px;
     }
   }

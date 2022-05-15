@@ -1,8 +1,6 @@
 .header {
-  padding-bottom: 22px;
-  padding-top: 30px;
 
-  @media #{$xs-l} {
+  @media #{$sm} {
     box-shadow: $base-shadow;
     height: 70px;
     overflow: hidden;
@@ -19,14 +17,20 @@
     display: flex;
     align-items: center;
     height: 100%;
+    padding-bottom: 22px;
+    padding-top: 30px;
 
     @media #{$xlg} {
+      padding-top: 0;
+      padding-bottom: 0;
       justify-content: space-between;
     }
   }
 
   &__item {
     margin-right: 52px;
+    display: inline-flex;
+    align-items: center;
 
     @media #{$xlg} {
       margin-right: 0;
@@ -40,15 +44,11 @@
   &__logo {
     margin-right: 20px;
 
-    @media #{$xlg} {
+    @media #{$md} {
       margin-right: 0;
     }
 
-    @media (max-width: 1130px) {
-      max-width: 195px;
-    }
-
-    @media #{$xs-l} {
+    @media #{$sm} {
       max-width: 120px;
       position: absolute;
       left: 50%;
@@ -75,9 +75,10 @@
 
     &-hamburger {
       @include mobileBtnStyles;
-      width: auto;
-      padding-left: 15px;
-      padding-right: 15px;
+      align-items: baseline;
+      width: 98px;
+      padding-left: 8px;
+      padding-right: 8px;
       color: $base-red;
 
       @media #{$xxs} {
@@ -88,6 +89,7 @@
 
       p {
         margin-top: 1px;
+        margin-left: 5px;
 
         @media #{$xxs} {
           display: none;
@@ -100,25 +102,25 @@
       img {
         width: 36px;
 
-        @media #{$md} {
+        @media #{$xlg} {
           width: 22px;
         }
 
-        @media #{$xs-l} {
+        @media #{$md} {
           width: 18px;
         }
       }
 
-      @media #{$md} {
+      @media #{$xlg} {
         @include mobileBtnStyles;
       }
 
-      @media #{$xs-l} {
+      @media #{$md} {
         margin-left: auto;
         margin-right: 10px;
       }
 
-      @media #{$xxs} {
+      @media #{$sm} {
         margin-right: 5px;
       }
     }
@@ -131,7 +133,7 @@
 
       img {
 
-        @media #{$xs-l} {
+        @media #{$sm} {
           width: 12px;
         }
       }
@@ -145,7 +147,7 @@
 
     &-menu {
 
-      @media #{$xs-l} {
+      @media #{$sm} {
         order: -1;
         margin-right: auto;
       }
@@ -153,23 +155,19 @@
   }
 
   &--decor {
-    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 17.5% -6px,
+    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 195px -6px,
                 url("../../images/bg_decor/flowers/single.svg") no-repeat 80% -23px,
                 url("../../images/bg_decor/flowers/bunch.svg") no-repeat 95% 6px;
 
-    @media #{$mid-large} {
-      background-position: 14.5% -25px, 70% -40px, 95% -8px;
-    }
-
-    @media #{$md} {
+    @media #{$xlg} {
       background-position: 19.5% -25px, 75% -40px, 97% -5px;
     }
 
-    @media #{$msm} {
+    @media #{$md} {
       background-position: 29.5% -18px, 74% -38px, 95% 6px;
     }
 
-    @media #{$xs-l} {
+    @media #{$sm} {
       background: none;
     }
   }
@@ -178,14 +176,14 @@
 
     &-md {
 
-      @media #{$lg} {
+      @media #{$xlg} {
         font-size: 18px;
       }
     }
 
     &-sm {
 
-      @media #{$lg} {
+      @media #{$xlg} {
         font-size: 16px;
       }
     }

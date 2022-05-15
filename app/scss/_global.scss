@@ -40,29 +40,27 @@ p {
 }
 
 .wrapper {
+	max-width: 1400px;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	background: url("../images/bg_decor/flowers/bunch_only_heads.svg") no-repeat 90% 28%;
+	background: url("../images/bg_decor/flowers/bunch_only_heads.svg") no-repeat 100% 26%;
 
 	@media #{$xlg} {
-		background-position: 102% 27%;
+		background-position: 96% 22%;
 	}
 
 	@media #{$md} {
-		background-position: 102% 17%;
+		background-position: 93% 15%;
 	}
 
 	@media #{$sm} {
-		background-position: 102% 15%;
-	}
-
-	@media #{$xs-l} {
-		background-position: 107% 12%;
+		background-position: 83% 11%;
 	}
 
 	@media #{$xxs} {
-		background-position: 107% 10.5%;
+		background-position: 107% 11%;
 	}
 }
 
@@ -77,15 +75,15 @@ p {
 .main {
 	width: calc(100% - 320px);
 
-	@media #{$mid-large} {
+	@media #{$xlg} {
 		width: calc(100% - 265px);
 	}
 
-	@media #{$msm} {
+	@media #{$md} {
 		width: calc(100% - 245px);
 	}
 
-	@media #{$xs-l} {
+	@media #{$sm} {
 		width: 100%;
 	}
 
@@ -104,7 +102,7 @@ p {
 				&:first-child {
 					width: calc(100% - 450px);
 
-					@media #{$lg} {
+					@media #{$xlg} {
 						width: calc(100% - 380px);
 					}
 
@@ -116,7 +114,7 @@ p {
 				&:last-child {
 					width: 367px;
 
-					@media #{$lg} {
+					@media #{$xlg} {
 						width: 320px;
 					}
 
@@ -141,10 +139,28 @@ p {
 }
 
 .container{
-	max-width: 1280px;
+	max-width: $screen-xlg;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media #{$xlg} {
+		max-width: #{$screen-md};
+	}
+
+	@media #{$md} {
+		max-width: #{$screen-sm};
+	}
+
+	@media #{$sm} {
+		max-width: #{$screen-xs};
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@media #{$xxs} {
+		max-width: 100%;
+	}
 }
 
 .header, .footer {

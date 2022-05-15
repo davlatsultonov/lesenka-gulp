@@ -6,7 +6,7 @@
   margin-bottom: 40px;
   overflow: hidden;
 
-  @media #{$xs-l} {
+  @media #{$sm} {
     margin: 25px auto 30px;
   }
 
@@ -19,11 +19,7 @@
       padding: 25px 30px 100px;
     }
 
-    @media #{$xs-l} {
-      padding-bottom: 125px;
-    }
-
-    @media #{$xxs} {
+    @media #{$sm} {
       padding-left: 10px;
       padding-right: 10px;
       padding-bottom: 90px;
@@ -41,19 +37,15 @@
       font-size: 28px;
     }
 
-    @media #{$xs-l} {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    @media #{$xxs} {
+    @media #{$sm} {
       font-size: 21px;
+      margin-bottom: 10px;
     }
   }
 
   .text-size-xs {
 
-    @media #{$xs-l} {
+    @media #{$sm} {
       font-size: 14px;
     }
   }
@@ -61,7 +53,7 @@
   .button {
     margin-top: 30px;
 
-    @media #{$xs-l} {
+    @media #{$sm} {
       margin-top: 10px;
     }
   }
