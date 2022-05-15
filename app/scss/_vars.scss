@@ -1,12 +1,18 @@
-$xlg: (max-width: 1280px);
+// screens
+$screen-xlg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 375px;
+
+$xlg: (max-width: $screen-xlg);
 $lg: (max-width: 1200px);
 $mid-large: (max-width: 1100px);
-$md: (max-width: 1024px);
-$sm: (max-width: 768px);
+$md: (max-width: $screen-md);
+$sm: (max-width: $screen-sm);
 $msm: (max-width: 719px);
 $xs-l: (max-width: 640px);
 $xs: (max-width: 480px);
-$xxs: (max-width: 375px);
+$xxs: (max-width: $screen-xs);
 
 // z-indexes
 $layer-1: 500;

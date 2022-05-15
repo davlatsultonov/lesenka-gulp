@@ -141,10 +141,26 @@ p {
 }
 
 .container{
-	max-width: 1280px;
+	max-width: $screen-xlg;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media #{$xlg} {
+		max-width: #{$screen-md};
+	}
+
+	@media #{$md} {
+		max-width: #{$screen-sm};
+	}
+
+	@media #{$sm} {
+		max-width: #{$screen-xs};
+	}
+
+	@media #{$xxs} {
+		max-width: 100%;
+	}
 }
 
 .header, .footer {
