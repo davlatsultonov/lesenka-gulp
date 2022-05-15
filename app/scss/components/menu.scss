@@ -6,6 +6,10 @@
   padding: 20px;
   z-index: $layer-1;
 
+  @media #{$sm} {
+    padding: 10px;
+  }
+
   &.active {
     display: block;
   }

@@ -22,8 +22,12 @@
 
     .slider-navigation {
       bottom: 125px;
-      width: calc(100% - 50px);
+      width: 100%;
       right: 0;
+
+      @media #{$md} {
+        bottom: 100px;
+      }
 
       @media #{$sm} {
         bottom: 75px;
