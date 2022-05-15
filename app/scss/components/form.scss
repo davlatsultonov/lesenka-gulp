@@ -4,7 +4,7 @@
   padding: 30px 25px;
   color: #36040e;
 
-  @media #{$xs} {
+  @media #{$sm} {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -46,7 +46,7 @@
   &__content {
     display: flex;
 
-    @media #{$xs} {
+    @media #{$sm} {
       flex-direction: column;
     }
   }
@@ -74,7 +74,7 @@
       width: calc(100% - 140px);
       min-width: calc(100% - 140px);
 
-      @media #{$xs} {
+      @media #{$sm} {
         width: 100%;
         min-width: 100%;
       }
@@ -83,7 +83,7 @@
     &:not(:last-child) {
       margin-right: 20px;
 
-      @media #{$xs} {
+      @media #{$sm} {
         margin-right: 0;
         margin-bottom: 20px;
       }
