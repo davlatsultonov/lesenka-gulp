@@ -33,8 +33,6 @@ $(document).ready(function(){
             }),
         })
     }
-
-
     if ($sliderBanner.length) {
         const hasSliderChildren = $sliderBanner.find('.banner__item').length > 1;
 
@@ -59,6 +57,14 @@ $(document).ready(function(){
         selectDefaultItem.find('li').html(current);
         $(this).parents('.select-block').removeClass('active');
     });
+
+    // division-tab
+    const $divisionTab = $('.division-tab');
+
+    $divisionTab.find('.list__item').on('click', function () {
+        $(this).parent().find('.list__item').each((index, item) => $(item).removeClass('active'));
+        $(this).addClass('active')
+    })
 });
 
 function setDynamicWidthToSliderNav() {

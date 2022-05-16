@@ -1,5 +1,14 @@
 .division-tab {
 
+  &__item {
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.18);
+    }
+  }
+
   &.list--horizontal.list--gap-md .list__item:not(:last-child) {
 
     @media #{$xlg} {
