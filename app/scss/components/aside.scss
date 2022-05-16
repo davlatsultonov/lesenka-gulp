@@ -26,5 +26,11 @@
   &-card {
     max-width: 185px;
     width: 100%;
+
+    &-decor {
+      background: url("../../images/bg_decor/drafts/thin_long.svg") no-repeat 125px 100%;
+      padding-bottom: 15px;
+      margin-bottom: -15px;
+    }
   }
 }
