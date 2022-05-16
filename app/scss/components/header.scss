@@ -146,12 +146,12 @@
   }
 
   &--decor {
-    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 195px -6px,
+    background: url("../../images/bg_decor/drafts/thick_short.svg") no-repeat 245px -6px,
                 url("../../images/bg_decor/flowers/single.svg") no-repeat 80% -23px,
                 url("../../images/bg_decor/flowers/bunch.svg") no-repeat 95% 6px;
 
     @media #{$xlg} {
-      background-position: 19.5% -25px, 75% -40px, 97% -5px;
+      background-position: 245px -25px, 75% -40px, 97% -5px;
     }
 
     @media #{$md} {
