@@ -34,6 +34,24 @@
       }
     }
   }
+
+  &--gallery {
+    padding: 40px 20px 20px;
+    margin: -40px -20px -20px;
+    background: url("../../images/bg_decor/drafts/thick_vertical.svg") no-repeat 0 55px,
+                url("../../images/bg_decor/drafts/thin_long.svg") no-repeat 0 75%,
+                url("../../images/bg_decor/drafts/thick_vertical_short.svg") no-repeat right 15px,
+                url("../../images/bg_decor/drafts/thin_long_reveresed.svg") no-repeat 81% 5px;
+
+    @media #{$md} {
+      background-position: 0 55px, 0 75%, right 15px, 87% 5px;
+    }
+
+    @media #{$sm} {
+      padding: 40px 10px 10px;
+      margin: -40px -10px -10px;
+    }
+  }
 }
 
 .slider-navigation {
