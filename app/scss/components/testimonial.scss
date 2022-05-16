@@ -12,6 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    h3 {
+      @include row-ellipsis;
+      max-width: calc(100% - 75px);
+    }
   }
 
   &__date {

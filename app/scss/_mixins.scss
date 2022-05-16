@@ -12,6 +12,12 @@
   overflow: hidden;
 }
 
+@mixin row-ellipsis() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 @mixin positionExtend() {
   top: 0;
   left: 0;
