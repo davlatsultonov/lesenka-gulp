@@ -38,12 +38,33 @@
 
   &--programs {
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+
+    @media #{$xlg} {
+      grid-column-gap: 20px;
+    }
 
     .card--compact {
 
       @media #{$sm} {
         padding-left: 0;
         padding-right: 0;
+      }
+    }
+
+    &-decor {
+      padding: 40px 30px 30px;
+      margin: -40px -30px -30px;
+      background: url("../../images/bg_decor/drafts/thin_long.svg") no-repeat 0 bottom,
+                  url("../../images/bg_decor/drafts/dots.svg") no-repeat 33% 100%,
+                  url("../../images/bg_decor/drafts/dashes.svg") no-repeat 75% bottom,
+                  url("../../images/bg_decor/drafts/thin_long.svg") no-repeat right 15px;
+
+
+
+      @media #{$sm} {
+        padding: 40px 10px 10px;
+        margin: -40px -10px -10px;
       }
     }
   }
