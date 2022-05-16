@@ -1,6 +1,9 @@
 .footer-wrapper {
   padding-top: 80px;
-  overflow: hidden;
+
+  @media #{$xlg} {
+    overflow: hidden;
+  }
 }
 
 .footer {
