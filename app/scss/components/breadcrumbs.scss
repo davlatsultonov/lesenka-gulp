@@ -1,0 +1,71 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media #{$sm} {
+    margin-top: 15px;
+  }
+
+  &__item {
+    color: $dark-red;
+    line-height: 1.1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+
+    @media #{$sm} {
+      max-width: 280px;
+      @include row-ellipsis;
+    }
+
+    &:after {
+      content: '/';
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      color: #000;
+      text-decoration: none;
+
+      @media #{$sm} {
+        width: 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+      }
+
+      &:after {
+        display: none;
+
+        @media #{$sm} {
+          content: '...';
+          display: inline;
+          position: absolute;
+          background-color: #fff;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & + * {
+    margin-top: 20px;
+  }
+}

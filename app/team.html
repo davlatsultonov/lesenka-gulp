@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./templates/head.html')
+<body>
+<div class="wrapper">
+    @@include('./templates/header.html')
+    <div class="content">
+        <div class="content__inner container">
+            @@include('./templates/aside.html')
+            <main class="main main--home">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        Команда
+                    </li>
+                </ul>
+
+
+                <section>
+                    <div>
+                        <h1>Записаться на экскурсию</h1>
+
+                        <form class="form form--decor">
+                            <div class="form__inner">
+                                <div class="form__content">
+                                    <div class="form__item">
+                                        <div class="form__input"> <!--При наличии ошибки добавляем для этого блока класс: form__input--error-->
+                                            <label>
+                                                <span>Контактное лицо</span>
+                                                <input type="text" placeholder="Иван Иванов Иванович">
+                                            </label>
+                                            <small>Ошибка при заполнении поля</small>
+                                        </div>
+                                        <div class="form__input">
+                                            <label>
+                                                <span>Телефон</span>
+                                                <input type="tel" placeholder="+7 (000) 000-00-00">
+                                            </label>
+                                            <small>Ошибка при заполнении поля</small>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__select">
+                                            <label>
+                                                <span>Возраст ребенка</span>
+                                                <div class="select-block">
+                                                    <ul class="select-block__default">
+                                                        <li class="select-block__item">
+                                                            Выбрать
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="select-block__list">
+                                                        <li class="select-block__item">
+                                                            Выбрать
+                                                        </li>
+                                                        <li class="select-block__item">
+                                                            1
+                                                        </li>
+                                                        <li class="select-block__item">
+                                                            2
+                                                        </li>
+                                                        <li class="select-block__item">
+                                                            3
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="form__btn">
+                                            <label></label>
+                                            <button class="button button--filled-white ">
+                                                <span class="text-bold">Отправить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__note">
+                                    Нажимая «Отправить заявку» Вы даете согласие на обработку своих персональных данных, в соответствии с
+                                    Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях, определенных Политикой
+                                    информационной безопасности
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <h1 class="title-with-button">
+                            Отзывы о центре
+                            <a href="#" target="_blank" class="button button--link text-size-xxs text-thin">Читать все</a>
+                        </h1>
+
+                        <div class="testimonial">
+                            <div class="testimonial__header">
+                                <h3>Лилианна Малиновская</h3>
+
+                                <div class="rating">
+                                    <div class="text-with-icon">
+                                        <div class="text-with-icon__content text-size-xs text-bold text-red">
+                                            <span>5.0</span>
+                                            <span class="text-with-icon__img">
+                                                <img class="" src="images/icons/star.svg" alt="star icon">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial__date">
+                                22 декабря 2021г.
+                            </div>
+                            <div class="testimonial__desc">
+                                Больше года посещаем с сыном занятия в группе "Вместе с мамой" в детском центре развития Лесенка.
+                                Мне близка педагогика Марии Монтессори, поэтому несмотря на то, что живём в друго детском центре развития Лесенка.
+                                Мне близка педагогика Марии Монтессори, поэтому несмотря на то, что живём в друго
+                            </div>
+                            <div class="testimonial-gallery">
+                                <a href="images/articles/img_1.jpg" class="testimonial-gallery__img">
+                                    <span style="background-image: url('images/articles/img_1.jpg')"></span>
+                                </a>
+                                <a href="images/articles/img_2.jpg" class="testimonial-gallery__img">
+                                    <span style="background-image: url('images/articles/img_2.jpg')"></span>
+                                </a>
+                            </div>
+                            <div class="testimonial__btn text-center">
+                                <a href="#" target="_blank" class="button button--link">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    @@include('./templates/footer.html')
+</div>
+
+@@include('./templates/scriptTag.html')
+</body>
+</html>
