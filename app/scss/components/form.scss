@@ -1,13 +1,4 @@
 .form {
-  border-radius: 10px;
-  background-color: #9d1f3a;
-  padding: 30px 25px;
-  color: #36040e;
-
-  @media #{$sm} {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
   label {
     display: inline-block;
@@ -41,6 +32,19 @@
     margin-top: 10px;
     display: none;
     color: #fff;
+  }
+
+  &__inner {
+    border-radius: 10px;
+    padding: 30px 25px;
+    background-color: #9d1f3a;
+    overflow: hidden;
+    color: #36040e;
+
+    @media #{$sm} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__content {
@@ -98,6 +102,23 @@
 
   &__note {
     margin-top: 20px;
+  }
+
+  &--decor {
+    padding: 40px 20px 20px;
+    margin: -40px -20px -20px;
+    background: url("../../images/bg_decor/drafts/thick_vertical.svg") no-repeat 0 55px,
+                url("../../images/bg_decor/drafts/thin_long.svg") no-repeat 0 bottom,
+                url("../../images/bg_decor/drafts/thin_long.svg") no-repeat right 15px;
+
+    @media #{$md} {
+      background-position: 0 55px, 0 bottom, right 25px;
+    }
+
+    @media #{$sm} {
+      padding: 40px 10px 10px;
+      margin: -40px -10px -10px;
+    }
   }
 }
 
