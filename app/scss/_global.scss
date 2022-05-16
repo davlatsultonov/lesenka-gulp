@@ -87,53 +87,50 @@ p {
 		width: 100%;
 	}
 
-	&--home {
+	.achievements, section:not(:last-child) {
+		margin-bottom: 50px;
+	}
 
-		.achievements, section:not(:last-child) {
-			margin-bottom: 50px;
+	.double-info {
+		display: flex;
+		justify-content: space-between;
+
+		> div {
+
+			&:nth-child(1) {
+				width: calc(100% - 450px);
+
+				@media #{$xlg} {
+					width: calc(100% - 380px);
+				}
+
+				@media #{$md} {
+					width: 100%;
+				}
+			}
+
+			&:nth-child(2) {
+				width: 367px;
+
+				@media #{$xlg} {
+					width: 320px;
+				}
+
+				@media #{$md} {
+					width: 100%;
+				}
+			}
+
+			&:not(:last-child) {
+
+				@media #{$md} {
+					margin-bottom: 50px;
+				}
+			}
 		}
 
-		section {
-			display: flex;
-			justify-content: space-between;
-
-			> div {
-
-				&:nth-child(1) {
-					width: calc(100% - 450px);
-
-					@media #{$xlg} {
-						width: calc(100% - 380px);
-					}
-
-					@media #{$md} {
-						width: 100%;
-					}
-				}
-
-				&:nth-child(2) {
-					width: 367px;
-
-					@media #{$xlg} {
-						width: 320px;
-					}
-
-					@media #{$md} {
-						width: 100%;
-					}
-				}
-
-				&:not(:last-child) {
-
-					@media #{$md} {
-						margin-bottom: 50px;
-					}
-				}
-			}
-
-			@media #{$md} {
-				flex-direction: column;
-			}
+		@media #{$md} {
+			flex-direction: column;
 		}
 	}
 }

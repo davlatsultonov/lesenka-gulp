@@ -1,7 +1,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
 
   &__img {
     @include background-cover;
@@ -31,6 +30,7 @@
     box-shadow: $base-shadow;
     padding: 15px 10px;
     border-radius: $base-border-radius;
+    background-color: #fff;
 
     .card__img {
       box-shadow: none;

@@ -5,7 +5,7 @@
   --cols-4: 4;
   $super: &;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 43px;
 
   &:not(:last-of-type) {
     margin-bottom: 40px;
@@ -91,10 +91,14 @@
     }
   }
 
+  @media #{$xlg} {
+    --cols-4: 3;
+  }
+
   @media #{$md} {
     --cols-2: 1;
     --cols-3: 2;
-    --cols-4: 3;
+    --cols-4: 2;
   }
 
   @media #{$sm} {
