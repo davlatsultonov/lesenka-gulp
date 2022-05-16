@@ -28,7 +28,7 @@
 
   &--compact {
     box-shadow: $base-shadow;
-    padding: 15px 10px;
+    padding: 18px 20px;
     border-radius: $base-border-radius;
     background-color: #fff;
 
@@ -41,5 +41,13 @@
         margin: auto;
       }
     }
+
+    &-width-lg {
+      min-width: 340px;
+    }
+  }
+
+  &--inner-gap-thin {
+    padding: 15px 10px;
   }
 }

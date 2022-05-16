@@ -89,6 +89,10 @@ p {
 
 	.achievements, section:not(:last-child) {
 		margin-bottom: 50px;
+
+		@media #{$sm} {
+			margin-bottom: 25px;
+		}
 	}
 
 	.double-info {

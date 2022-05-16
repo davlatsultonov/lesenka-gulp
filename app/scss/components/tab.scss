@@ -1,0 +1,20 @@
+.division-tab {
+
+  &.list--horizontal.list--gap-md .list__item:not(:last-child) {
+
+    @media #{$xlg} {
+      margin-right: 20px;
+    }
+
+    @media #{$md} {
+      margin-right: 0;
+    }
+  }
+
+  .card--compact-width-lg {
+
+    @media #{$md} {
+      min-width: 100%;
+    }
+  }
+}
