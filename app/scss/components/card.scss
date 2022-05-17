@@ -93,6 +93,10 @@
         &--lg {
           max-width: 450px;
 
+          @media #{$xlg} {
+            max-width: 360px;
+          }
+
           @media #{$md} {
             max-width: 100%;
           }
