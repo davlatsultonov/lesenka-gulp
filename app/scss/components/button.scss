@@ -10,6 +10,7 @@
   }
 
   &--link {
+    justify-content: flex-start;
     color: $base-red;
     text-decoration: underline;
     line-height: normal;
