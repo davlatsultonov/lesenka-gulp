@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  $super: &;
 
   &__img {
     @include background-cover;
@@ -27,8 +28,92 @@
     margin-top: auto;
   }
 
+  &__right {
+    margin-left: 30px;
+
+    @media #{$sm} {
+      margin-left: 0;
+    }
+
+    p {
+      max-width: 200px;
+
+      @media #{$sm} {
+        max-width: 100%;
+      }
+    }
+  }
+
   h2 + .card__desc, .card__desc + h2 {
     margin-top: 10px;
+  }
+
+  .button + p {
+    margin-top: 20px;
+  }
+
+  & + p {
+    margin-top: 30px;
+  }
+
+  &--row {
+    flex-direction: row;
+
+    @media #{$sm} {
+      flex-direction: column;
+    }
+
+    #{$super}__img {
+      max-width: 200px;
+      width: 100%;
+      margin-bottom: 0;
+
+      @media #{$sm} {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+
+      &--lg-width {
+        max-width: 450px;
+      }
+    }
+
+    &--lg {
+      @media #{$md} {
+        flex-direction: column;
+      }
+
+      #{$super}__img {
+
+        @media #{$md} {
+          margin-bottom: 20px;
+        }
+
+        &--lg {
+          max-width: 450px;
+
+          @media #{$md} {
+            max-width: 100%;
+          }
+        }
+      }
+
+      #{$super}__right {
+
+        @media #{$md} {
+          margin-left: 0;
+        }
+
+        p {
+          max-width: 350px;
+
+          @media #{$md} {
+            max-width: 100%;
+          }
+        }
+      }
+    }
   }
 
   &--compact {
