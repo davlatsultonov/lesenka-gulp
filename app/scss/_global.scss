@@ -38,6 +38,10 @@ p {
 	& + .column {
 		margin-top: 20px;
 	}
+
+	span:not(:last-of-type) {
+		margin-right: 5px;
+	}
 }
 
 .wrapper {
@@ -250,7 +254,7 @@ h1 {
 h2 {
 	font-size: 18px;
 	color: $base-red;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 
 h3 {
