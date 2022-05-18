@@ -131,6 +131,14 @@
     }
   }
 
+  &--daily-regime {
+    grid-template-columns: 465px 1fr;
+
+    @media #{$md} {
+      grid-template-columns: 1fr;
+    }
+  }
+
   & + .text-center {
     margin-top: 40px;
 
