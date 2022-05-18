@@ -65,6 +65,17 @@ $(document).ready(function(){
         $(this).parent().find('.list__item').each((index, item) => $(item).removeClass('active'));
         $(this).addClass('active')
     })
+
+    // timetable tab
+    if (window.innerWidth <= 1024) {
+        $('.timetable-header').on('click', function (e) {
+            if ($(e.target).hasClass('active')) {
+                const type = $(e.target).data('timetable-section') === 'pm' ? 'am' : 'pm';
+                $('section[data-timetable-section]').each((index, item) => $(item).removeClass('active'));
+                $(`[data-timetable-section="${type}"]`).addClass('active')
+            }
+        })
+    }
 });
 
 function setDynamicWidthToSliderNav() {

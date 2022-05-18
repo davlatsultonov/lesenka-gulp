@@ -1,0 +1,106 @@
+.timetable {
+  --column1: 135px;
+  --column2: 390px;
+  --column3: 345px;
+
+  &-header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    box-shadow: $base-shadow;
+    color: $base-yellow;
+    border-radius: $base-border-radius;
+
+    > section {
+      padding: 15px 25px;
+      flex-grow: 1;
+      height: 100%;
+
+      &:not(:last-of-type) {
+        border-right: 1px solid #ccc;
+      }
+
+      &:first-child {
+        width: var(--column1);
+        padding-left: 20px;
+      }
+
+      &:nth-child(2) {
+        width: var(--column2);
+      }
+
+      &:nth-child(3) {
+        width: var(--column3);
+      }
+    }
+  }
+
+  &-day {
+    display: flex;
+
+    > section {
+      padding: 15px 25px;
+      flex-grow: 1;
+      height: 100%;
+
+      &:not(:last-of-type) {
+        border-right: 1px solid #ccc;
+      }
+
+      &:first-child {
+        width: var(--column1);
+        padding-left: 20px;
+      }
+
+      &:nth-child(2) {
+        width: var(--column2);
+      }
+
+      &:nth-child(3) {
+        width: var(--column3);
+      }
+    }
+  }
+
+  [data-timetable-section].active {
+
+    @media #{$md} {
+      width: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+    }
+
+
+    &:after {
+
+      @media #{$md} {
+        content: '...';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    * {
+
+      @media #{$md} {
+        display: none;
+      }
+    }
+  }
+
+  @media #{$xlg} {
+    --column2: 310px;
+    --column3: 310px;
+  }
+
+  @media #{$md} {
+    --column2: 280px;
+    --column3: 280px;
+  }
+}
+
+
