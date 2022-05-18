@@ -71,4 +71,22 @@
       border-radius: 100%;
     }
   }
+
+  &--programs {
+    flex-wrap: nowrap;
+
+    @media #{$md} {
+      flex-wrap: wrap;
+    }
+
+    @media #{$sm} {
+      justify-content: space-between;
+    }
+
+    &.list--horizontal.list--gap-md .list__item:not(:last-child) {
+      @media #{$sm} {
+        margin-right: 0;
+      }
+    }
+  }
 }

@@ -126,6 +126,10 @@
     border-radius: $base-border-radius;
     background-color: #fff;
 
+    &.active {
+      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.18);
+    }
+
     .card__img {
       box-shadow: none;
       border-radius: 0;
@@ -138,6 +142,47 @@
 
     &-width-lg {
       min-width: 340px;
+    }
+  }
+
+  &--program {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 58px;
+    padding-right: 0;
+    min-height: 80px;
+    min-width: 165px;
+    background-repeat: no-repeat;
+    background-position: -16px 6px;
+    background-size: 90px;
+
+    @media #{$md} {
+      min-width: 145px;
+      background-size: 70px;
+      padding-right: 5px;
+      padding-left: 50px;
+    }
+
+    @media #{$sm} {
+      min-width: 0;
+      max-width: 165px;
+      width: 100%;
+      background-size: 90px;
+      padding-left: 58px;
+      padding-right: 0;
+    }
+
+    @media #{$xxs} {
+      max-width: 145px;
+      background-size: 70px;
+      padding-right: 5px;
+      padding-left: 50px;
+    }
+
+    h2 {
+      margin-bottom: 0;
     }
   }
 

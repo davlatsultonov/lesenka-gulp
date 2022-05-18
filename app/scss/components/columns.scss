@@ -85,6 +85,23 @@
         margin: -40px -10px -10px;
       }
     }
+
+    &-sm {
+      display: inline-grid;
+
+      @media #{$sm} {
+        display: grid;
+      }
+
+      &.column--programs-decor {
+
+        @media #{$sm} {
+          padding: 40px 10px 30px;
+          margin: -40px -10px -30px;
+          background-position: 0 30px, left 100%, right 90%, right 15px;
+        }
+      }
+    }
   }
 
   &--steps {

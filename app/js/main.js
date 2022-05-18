@@ -59,7 +59,7 @@ $(document).ready(function(){
     });
 
     // division-tab
-    const $divisionTab = $('.division-tab');
+    const $divisionTab = $('.tab_js');
 
     $divisionTab.find('.list__item').on('click', function () {
         $(this).parent().find('.list__item').each((index, item) => $(item).removeClass('active'));
