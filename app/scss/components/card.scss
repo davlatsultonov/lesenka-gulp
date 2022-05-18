@@ -52,6 +52,11 @@
     margin-top: 20px;
   }
 
+  .text-with-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   & + p {
     margin-top: 30px;
   }
@@ -142,6 +147,10 @@
 
     &-width-lg {
       min-width: 340px;
+    }
+
+    &-width-md {
+      min-width: 270px;
     }
   }
 
