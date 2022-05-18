@@ -1,0 +1,52 @@
+.look-book {
+  --look1: 450px;
+  --look2: 1fr;
+  --look3: 64px;
+  display: grid;
+  grid-template-columns: var(--look1) var(--look2) var(--look3);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  @media #{$xlg} {
+    --look1: 350px;
+  }
+
+  @media #{$md} {
+    --look1: 1fr;
+    grid-template-columns: var(--look1) var(--look2);
+  }
+
+  @media #{$sm} {
+    grid-template-columns: var(--look1);
+  }
+
+  &__column {
+
+
+    &:nth-child(3) {
+
+      @media #{$md} {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    @include background-cover;
+    min-height: 250px;
+    border-radius: $base-border-radius;
+    box-shadow: $base-shadow;
+
+    @media #{$sm} {
+      min-height: 200px;
+    }
+
+    &--sm {
+      min-height: 60px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
