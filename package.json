@@ -20,13 +20,10 @@
     "gulp-file-include": "^2.3.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0",
-    "jquery": "^3.6.0"
+    "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
-    "gulp-sourcemaps": "^3.0.0",
-    "jquery-mask-plugin": "^1.14.16",
-    "owl.carousel": "^2.3.4"
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
