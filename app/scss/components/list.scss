@@ -33,6 +33,7 @@
   &--horizontal {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 
     .list__item {
       margin-bottom: 10px;
@@ -43,6 +44,17 @@
     }
 
     &.list--gap {
+
+      &-lg .list__item {
+
+        &:not(:last-child) {
+          margin-right: 40px;
+
+          @media #{$xlg} {
+            margin-bottom: 30px;
+          }
+        }
+      }
 
       &-md .list__item {
 
@@ -88,5 +100,9 @@
         margin-right: 0;
       }
     }
+  }
+
+  & + .look-book {
+    margin-top: 30px;
   }
 }
