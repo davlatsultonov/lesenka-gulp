@@ -73,6 +73,7 @@
   }
 
   &--social {
+    align-items: stretch;
 
     .list__item {
       display: inline-flex;
@@ -81,6 +82,7 @@
       padding: 10px;
       background-color: $dark-red;
       border-radius: 100%;
+      margin-bottom: 10px;
     }
   }
 
