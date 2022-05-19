@@ -68,12 +68,22 @@ $(document).ready(function(){
 
     // timetable tab
     if (window.innerWidth <= 1024) {
-        $('.timetable-header').on('click', function (e) {
-            if ($(e.target).hasClass('active')) {
-                const type = $(e.target).data('timetable-section') === 'pm' ? 'am' : 'pm';
-                $('section[data-timetable-section]').each((index, item) => $(item).removeClass('active'));
-                $(`[data-timetable-section="${type}"]`).addClass('active')
+        const shortHeight = 120;
+        const timeTableDays = $('.timetable-day');
+
+        timeTableDays.on('click', function (e) {
+            const height = Array.from(this.children).reduce((acc, curr) => acc + curr.clientHeight + 10, 0);
+
+            timeTableDays.each((index, item) => {
+                $(item).removeClass('active').css('max-height', shortHeight)
+            })
+
+            if (this.clientHeight > shortHeight) {
+                $(this).removeClass('active').css('max-height', shortHeight);
+            } else {
+                $(this).addClass('active').css('max-height', height)
             }
+
         })
     }
 });
