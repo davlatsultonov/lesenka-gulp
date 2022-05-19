@@ -24,7 +24,7 @@
     &:first-child {
       flex-grow: 1;
       flex-shrink: 0;
-      flex-basis: 16%;
+      flex-basis: 17%;
       padding-left: 20px;
 
       @media #{$xlg} {
@@ -103,7 +103,7 @@
         display: block;
         font-size: 14px;
         position: absolute;
-        height: 20px;
+        height: 34px;
         bottom: 0;
         left: 0;
         right: 0;
