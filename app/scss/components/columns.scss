@@ -1,13 +1,5 @@
 .column-group {
 
-  &:not(:last-of-type) {
-    margin-bottom: 50px;
-
-    @media #{$sm} {
-      margin-bottom: 30px;
-    }
-  }
-
   &__header {
 
     & + .column-group__list {
@@ -22,18 +14,49 @@
       margin-bottom: 30px;
     }
   }
+
+  &--gap-thin {
+
+    .column-group__item:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--result {
+
+    .column {
+      @media #{$md} {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  & + .text-with-icon {
+    margin-top: 40px;
+  }
 }
 
 .column {
   --cols-2: repeat(2, 1fr);
   --cols-3: 3;
   --cols-4: 4;
+  --cols-1-3: 32% calc(68% - var(--grid-gap));
+  --cols-3-1: calc(68% - var(--grid-gap)) 32%;
+  --grid-gap: 43px;
   $super: &;
   display: grid;
-  grid-gap: 43px;
+  grid-gap: var(--grid-gap);
 
   &--2 {
     grid-template-columns: var(--cols-2);
+
+    &.column--1-3 {
+      grid-template-columns: var(--cols-1-3);
+    }
+
+    &.column--3-1 {
+      grid-template-columns: var(--cols-3-1);
+    }
   }
 
   &--3 {
@@ -45,8 +68,7 @@
   }
 
   &--gap-thin {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    --grid-gap: 20px;
   }
 
   &--no-gap {
@@ -166,6 +188,8 @@
     --cols-2: 1;
     --cols-3: 2;
     --cols-4: 2;
+    --cols-1-3: 1fr;
+    --cols-3-1: 1fr;
   }
 
   @media #{$sm} {
