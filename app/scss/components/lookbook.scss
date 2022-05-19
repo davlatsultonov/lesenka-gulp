@@ -2,6 +2,7 @@
 
   @media #{$sm} {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -63,5 +64,9 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
+
+  & + h1, & + h2, & + .column {
+    margin-top: 30px;
   }
 }
