@@ -41,12 +41,7 @@ function images() {
 }
 
 function scripts() {
-    return src([
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
-        'node_modules/owl.carousel/dist/owl.carousel.min.js',
-        'app/js/main.js'
-    ])
+    return src('app/js/main.js')
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest('app/js'))
@@ -88,6 +83,7 @@ function build() {
 
 
 function watching() {
+    watch(['app/images/**/*'], images);
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', series(html, browserSync.reload))
