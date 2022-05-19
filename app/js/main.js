@@ -66,6 +66,11 @@ $(document).ready(function(){
         $(this).addClass('active')
     })
 
+    // columns view toggle
+    $('.columns-wrapper__btn_js').on('click', function () {
+        $(this).closest('.columns-wrapper').find('.columns-wrapper__inner').toggleClass('active')
+    })
+
     // timetable tab
     if (window.innerWidth <= 1024) {
         const shortHeight = 120;

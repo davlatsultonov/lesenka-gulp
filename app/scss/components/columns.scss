@@ -1,3 +1,37 @@
+.columns-wrapper {
+
+  &__inner {
+    padding: 10px;
+    margin: -10px;
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    }
+
+    &.active {
+      height: auto;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 50px 0;
+  }
+}
+
 .column-group {
 
   &__header {
