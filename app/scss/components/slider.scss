@@ -2,22 +2,24 @@
   position: relative;
 
   &--banner {
-    --indent: 50px;
-    padding: var(--indent);
-    margin: calc(var(--indent) * -1);
-    background: url("../../images/bg_decor/drafts/thick_circle.svg") no-repeat 25px 30px,
+    padding: 50px 50px 50px 80px;
+    margin: -50px -50px -50px -80px;
+    background: url("../../images/bg_decor/drafts/thick_circle.svg") no-repeat 50px 30px,
+                url("../../images/bg_decor/flowers/single_horizontal.svg") no-repeat left 83%,
                 url("../../images/bg_decor/drafts/thin_longest.svg") no-repeat 98.5% 30px,
                 url("../../images/bg_decor/drafts/dots.svg") no-repeat 100% 150px,
                 url("../../images/bg_decor/drafts/dashes.svg") no-repeat 93% 88%;
 
     @media #{$md} {
-      --indent: 18px;
-      background-position: 0 18px, 100% 5px, 100% 130px, 92% 90%;
+      padding: 18px 18px 18px 38px;
+      margin: -18px -18px -18px -38px;
+      background-position: 0 18px, left 83%, 100% 5px, 100% 130px, 92% 90%;
     }
 
     @media #{$sm} {
-      --indent: 10px;
-      background-position: 0 30px, 101% 30px, 100% 150px, 93% 95%;
+      padding: 10px 10px 10px 30px;
+      margin: -10px -10px -10px -30px;
+      background-position: 0 30px, left 83%, 101% 30px, 100% 150px, 93% 95%;
     }
 
     .slider-navigation {
