@@ -91,10 +91,22 @@ $(document).ready(function(){
 
     // Division tab
     const $divisionTab = $('.tab_js');
+    const $stepItems = $('.steps__item');
 
     $divisionTab.find('.list__item').on('click', function () {
         $(this).parent().find('.list__item').each((index, item) => $(item).removeClass('active'));
-        $(this).addClass('active')
+        $(this).addClass('active');
+    })
+
+    $stepItems.each((i, item) => {
+        const stepHeight = $(item).find('.text-with-icon').height() + 40;
+        $(item).css('max-height', stepHeight);
+
+        $(item).on('click', function () {
+            const $stepDescr = $(this).find('.steps__desc');
+            $(this).toggleClass('active');
+            $(this).css('max-height', $(this).hasClass('active') ? $stepDescr.height() + stepHeight + 20 : stepHeight)
+        })
     })
 
     // Columns view toggle

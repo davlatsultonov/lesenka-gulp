@@ -1,0 +1,58 @@
+.steps {
+
+  &__item {
+    overflow: hidden;
+    transition: max-height 200ms ease-in-out;
+    cursor: pointer;
+
+    &.active {
+
+      .steps__header {
+
+        &:after {
+          transform: translateY(-50%) rotate(270deg);
+        }
+      }
+    }
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      width: 20px;
+      height: 20px;
+      background: url("../../images/icons/arrow-right.svg");
+      background-size: 20px;
+
+      @media #{$xlg} {
+        right: -10px;
+      }
+    }
+  }
+
+  .card {
+    padding: 20px 30px;
+  }
+
+  .text-with-icon {
+    max-width: 78%;
+
+    @media #{$xlg} {
+      max-width: 90%;
+    }
+  }
+
+  p {
+
+    @media #{$sm} {
+      font-size: 14px;
+    }
+  }
+}
