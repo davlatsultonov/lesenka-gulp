@@ -12,8 +12,20 @@
 
   &-hash-navigation {
     justify-content: center;
-    width: 286px !important;
-    margin: 20px auto 0;
+    max-width: 286px;
+    margin: auto;
+
+    @media #{$xlg} {
+      max-width: 233px;
+    }
+
+    @media #{$md} {
+      max-width: 286px;
+    }
+
+    @media #{$sm} {
+      max-width: 233px;
+    }
 
     .owl-stage {
       margin: auto;

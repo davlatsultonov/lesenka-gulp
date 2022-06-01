@@ -58,13 +58,13 @@
 
 .slider-navigation {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   z-index: 1;
   text-align: center;
+  margin-top: 20px;
 }
 
 .slider-hash-navigation {
+  z-index: 2 !important;
 
   &__img {
     display: inline-block;
@@ -72,6 +72,10 @@
     height: 60px;
     border-radius: $base-border-radius;
     @include background-cover;
+  }
+
+  &.list--horizontal .list__item {
+    margin-bottom: 0;
   }
 }
 
@@ -91,5 +95,20 @@
     &.active {
       background-color: #fff;
     }
+  }
+}
+
+#gallery-slider-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0;
+
+  .owl-next, .owl-prev {
+    background-color: transparent;
   }
 }
